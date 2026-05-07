@@ -1,0 +1,38 @@
+# Build artifacts
+*.o
+*.obj
+*.exe
+
+# Compiled benchmark binaries
+cpu/sga_cpu
+cpu/bright_cpu
+cpu/ecl_cpu
+cpu/eclml_cpu
+gpu/sga_gpu
+gpu/bright_gpu
+gpu/ecl_gpu
+gpu/eclcr_gpu
+gpu/eclml_gpu
+
+# Generated benchmark output
+cpu/results/results_cpu.csv
+gpu/results/results_gpu.csv
+cpu/results/cpu_time.png
+cpu/results/cpu_colors.png
+gpu/results/gpu_time.png
+gpu/results/gpu_colors.png
+
+# Datasets (heavy; users provide their own)
+datasets/*.csr
+datasets/*.egr
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
